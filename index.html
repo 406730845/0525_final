@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <link href="b1.css" rel="stylesheet" />
+    <link href="b2.css" rel="stylesheet" />
+  </head>
+  <body>
+    <button class="burger" onclick="toggleMenu()"></button>
+    <div class="background"></div>
+    <div class="menu">
+      <nav>
+        <a style="animation-delay: 0.2s" href="https://406730845.github.io/0525_photo/" target="z1"> <span class="material-symbols-outlined">
+terminal
+</span> Photo</a>
+        <a style="animation-delay: 0.3s" href="https://406730845.github.io/0426/" target="z1">課堂作業</a>
+        <a style="animation-delay: 0.4s" href="https://406730845.github.io/InteractiveVideo/" target="z1"><ul class="wave-menu">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        H5P互動影片</a>
+        <a style="animation-delay: 0.5s" href="https://406730845.github.io/game/" target="z1"><div class="love">
+          <input id="switch" type="checkbox">
+          <label class="love-heart" for="switch">
+            <i class="left"></i>
+            <i class="right"></i>
+            <i class="bottom"></i>
+            <div class="round"></div>
+          </label>
+        </div> H5P互動遊戲</a>
+      </nav>
+    </div>
+
+    <div class="main">
+      <iframe name="z1" width="100%" height="100%" frameBorder="0"></iframe>
+    </div>
+
+    <script type="text/javascript">
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+  </body>
+</html>
